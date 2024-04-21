@@ -15,25 +15,31 @@ final class LoginViewController: UIViewController {
     @IBOutlet var forgotUsername: UIButton!
     @IBOutlet var forgotPassword: UIButton!
     
-    private let user = "111"
-    private let password = "222"
+    private let user = User.getUser()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        usernameTextField.text = user.login
+        passwordTextField.text = user.password
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeVC = segue.destination as? WelcomeViewController
-        welcomeVC?.user = user
+        let tabBarController = segue.destination as? TabBarController
+        tabBarController?.user = user
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
-        view.endEditing(true) //  Не смог сделать, списал, даже в интернете не нашёл инфу
+        view.endEditing(true)
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        guard usernameTextField.text == user, passwordTextField.text == password else {
+        guard usernameTextField.text == user.login,
+              passwordTextField.text == user.password else {
             showAlert(
-                title: "wrong login or password",
-                message: "enter correct information",
-                textField: passwordTextField // подсмотрел, как указать то, что очищаем
+                title: "Wrong login or password",
+                message: "Enter correct information",
+                textField: passwordTextField
             )
             return false
             }
@@ -44,9 +50,9 @@ final class LoginViewController: UIViewController {
         
         switch sender {
         case forgotUsername:
-            showAlert(title: "Bruh", message: "Your login is \(user)")
+            showAlert(title: "Bruh", message: "Your login is \(user.login)")
         default:
-            showAlert(title: "Bruh", message: "Your password is \(password)")
+            showAlert(title: "Bruh", message: "Your password is \(user.password)")
         }
     }
     
@@ -57,7 +63,7 @@ final class LoginViewController: UIViewController {
     }
     
 
-    private func showAlert(title: String, message: String, textField: UITextField? = nil) { // тоже подсмотрел, как указать то, что очищаем
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             textField?.text = ""

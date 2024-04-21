@@ -14,10 +14,6 @@
 		44341E4A2BCA9A5C00E32AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44341E492BCA9A5C00E32AC0 /* Assets.xcassets */; };
 		44341E4D2BCA9A5C00E32AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44341E4B2BCA9A5C00E32AC0 /* LaunchScreen.storyboard */; };
 		44341E552BCAB6B200E32AC0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44341E542BCAB6B200E32AC0 /* WelcomeViewController.swift */; };
-		44341E592BD414A200E32AC0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44341E582BD414A200E32AC0 /* TabBarController.swift */; };
-		44341E5B2BD414D500E32AC0 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44341E5A2BD414D500E32AC0 /* UserInfoViewController.swift */; };
-		44341E5D2BD414EA00E32AC0 /* UserTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44341E5C2BD414EA00E32AC0 /* UserTextViewController.swift */; };
-		44341E5F2BD4162300E32AC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44341E5E2BD4162300E32AC0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +26,6 @@
 		44341E4C2BCA9A5C00E32AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44341E4E2BCA9A5C00E32AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44341E542BCAB6B200E32AC0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		44341E582BD414A200E32AC0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		44341E5A2BD414D500E32AC0 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
-		44341E5C2BD414EA00E32AC0 /* UserTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextViewController.swift; sourceTree = "<group>"; };
-		44341E5E2BD4162300E32AC0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,52 +58,16 @@
 		44341E3F2BCA9A5A00E32AC0 /* HW 2.4 */ = {
 			isa = PBXGroup;
 			children = (
-				44341E632BD501A500E32AC0 /* App */,
-				44341E602BD4FFCA00E32AC0 /* ViewControllers */,
-				44341E622BD5018A00E32AC0 /* Models */,
-				44341E612BD5015E00E32AC0 /* StoryBoards */,
-				44341E492BCA9A5C00E32AC0 /* Assets.xcassets */,
-			);
-			path = "HW 2.4";
-			sourceTree = "<group>";
-		};
-		44341E602BD4FFCA00E32AC0 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				44341E442BCA9A5A00E32AC0 /* LoginViewController.swift */,
-				44341E582BD414A200E32AC0 /* TabBarController.swift */,
-				44341E542BCAB6B200E32AC0 /* WelcomeViewController.swift */,
-				44341E5A2BD414D500E32AC0 /* UserInfoViewController.swift */,
-				44341E5C2BD414EA00E32AC0 /* UserTextViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		44341E612BD5015E00E32AC0 /* StoryBoards */ = {
-			isa = PBXGroup;
-			children = (
-				44341E462BCA9A5A00E32AC0 /* Main.storyboard */,
-				44341E4B2BCA9A5C00E32AC0 /* LaunchScreen.storyboard */,
-			);
-			path = StoryBoards;
-			sourceTree = "<group>";
-		};
-		44341E622BD5018A00E32AC0 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				44341E5E2BD4162300E32AC0 /* User.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		44341E632BD501A500E32AC0 /* App */ = {
-			isa = PBXGroup;
-			children = (
 				44341E402BCA9A5A00E32AC0 /* AppDelegate.swift */,
 				44341E422BCA9A5A00E32AC0 /* SceneDelegate.swift */,
+				44341E442BCA9A5A00E32AC0 /* LoginViewController.swift */,
+				44341E542BCAB6B200E32AC0 /* WelcomeViewController.swift */,
+				44341E462BCA9A5A00E32AC0 /* Main.storyboard */,
+				44341E492BCA9A5C00E32AC0 /* Assets.xcassets */,
+				44341E4B2BCA9A5C00E32AC0 /* LaunchScreen.storyboard */,
 				44341E4E2BCA9A5C00E32AC0 /* Info.plist */,
 			);
-			path = App;
+			path = "HW 2.4";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,13 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44341E452BCA9A5A00E32AC0 /* LoginViewController.swift in Sources */,
-				44341E5D2BD414EA00E32AC0 /* UserTextViewController.swift in Sources */,
-				44341E5B2BD414D500E32AC0 /* UserInfoViewController.swift in Sources */,
 				44341E552BCAB6B200E32AC0 /* WelcomeViewController.swift in Sources */,
 				44341E412BCA9A5A00E32AC0 /* AppDelegate.swift in Sources */,
-				44341E592BD414A200E32AC0 /* TabBarController.swift in Sources */,
 				44341E432BCA9A5A00E32AC0 /* SceneDelegate.swift in Sources */,
-				44341E5F2BD4162300E32AC0 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +298,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8327Q6FXV2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW 2.4/App/Info.plist";
+				INFOPLIST_FILE = "HW 2.4/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -378,7 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8327Q6FXV2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW 2.4/App/Info.plist";
+				INFOPLIST_FILE = "HW 2.4/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
